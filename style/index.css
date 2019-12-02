@@ -1,0 +1,63 @@
+.top-row{
+	display: flex;
+	width: 40%
+}
+
+.title-box {
+	display: flex;
+	justify-content: center;
+
+	flex-grow: 1;
+	flex-basis: 0;	
+	border-radius: 20px;
+	background-color: black;
+	min-width: 300px;
+
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.title-box p {
+	justify-content: center;
+
+	display: inline-block;
+
+	color: white;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	font-size: 50px;
+	letter-spacing: 1px;
+
+
+}
+
+.link-row {
+	display: flex;
+	width: 100%;
+	
+
+}
+
+.center-box {
+	flex: 1;
+	text-align: center;
+	padding-top: 200px;
+	
+}
+
+.center-box ul {
+	justify-content: left;
+	list-style-type: none;
+	font-size: 40px;
+
+	/* margin-right: 300px; */
+
+
+}
+
+
+.center-box ul li {
+	align-self: center;
+}

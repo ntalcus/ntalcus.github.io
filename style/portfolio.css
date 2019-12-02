@@ -1,0 +1,28 @@
+.about-body {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.about-body ul {
+    font-size: 40px;
+}
+
+.git {
+    background-color: mediumspringgreen;
+    color: white;
+    outline: none;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.git:hover {
+    color: mediumspringgreen;
+    background-color: white;
+}
+
+/* .git:visited {
+    color: white;
+} */
