@@ -1,3 +1,78 @@
-.typewriter {
+#type_writer {
     font-size: 40px;
+    color: white;
+    background-color: black;
+    padding:  20px;
+    border-radius: 5px;
+    transition-duration: .05s;
+}
+
+#type_writer:empty {
+    padding: 0px;
+    visibility: hidden;
+}
+
+#cursor {
+    visibility: hidden;
+}
+
+#type_writer:empty #cursor {
+    visibility: visible;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}	
+
+.body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* This is the stuff for making the blinking cursor on empty work */
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
