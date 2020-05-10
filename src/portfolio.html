@@ -31,6 +31,17 @@
             <p>
                 I'm building a reactjs app inspired by papier by muxmux. The tool is based in Facebook's draftjs and implements simple markup for various text effects. I'm currently working towards packaging it into a firefox extension with local storage. Stretch goals are to build in cloud-based sync for all devices and options to change theming. 
             </p>
+            <p> 
+                I chose this project partially because I wanted to explore some of the aesthetic design choices in making my own flavor of markup editor. I think that there's something pleasing to the eye about how certain characters can be used as tags to represent intended representation of text. One set of tags that I've implemented is a set of simple strategies to create headings of decreasing impact (essentially h1, h2, h3). These headings are represented by starting a line with #, ##, and ###, respectively (just like markdown). Draftjs allows one to search text for patterns via it's Decorator abstraction. 
+                Specifically, to use multiple types of decorators at once (necessary for multiple types of titles), I created a set of components representing each type of header and a set of regex strategies to identify each type of heading. Then I built a CompositeDecorator using these components and strategies. Then, it's as simple as instantiating the Editor with my custom CompositeDecorator and letting draftjs handle the rest.
+                I'm planning to take a deeper dive into draftjs' implementation to better understand how it identifies decorators and subsitutes them for react components properly.
+            </p>
+            <p>
+                Bold, italic, and strike-through text are natively implemented to draftjs, though I plan to explore other ways of implementing them myself. I've considered using the decorator functionality described in the section about headings but I am curious to see if there are more effective means in the Draftjs toolkit.
+            </p> 
+            <p>
+                My next steps are to further explore implementing rich styled text (bold, italic, strikethrough) and to see if there are any other effective tools I could add to a text editor to effectively organize data for personal use.
+            </p>
         </div>
 		<!-- <ul> -->
 			<!-- <li>my name is noah and I've <a class="git" href="https://github.com/ntalcus">never done anything</a></li> -->

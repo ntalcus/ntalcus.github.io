@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 
 working_dir = "./src/posts/"
 source = "manifest.txt"
+thoughts_text = "./src/thoughts_base.html"
+output_file = "src/thoughts.html"
 
 with open(working_dir + source) as f:
     data = f.readlines()
@@ -25,7 +27,6 @@ for i in range(len(data) - 1, -1, -1):
                     text(post_data[j].strip())
 
 result = doc.getvalue()
-thoughts_text = "./src/thoughts_base.html"
 with open(thoughts_text) as base:
     thoughts_bs = BeautifulSoup(base, 'html.parser')
 base.close() 
@@ -33,7 +34,6 @@ tag = thoughts_bs.find(class_="article-box")
 tag.insert(1, BeautifulSoup(result, 'html.parser'))
 
 html = thoughts_bs.prettify("utf-8")
-output_file = "src/thoughts.html"
 with open(output_file, "wb") as f:
     f.write(html)
     f.close()
