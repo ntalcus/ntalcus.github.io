@@ -4,19 +4,19 @@
     margin-top: 50px;
     margin-left: 300px;
     margin-right: 300px;
+    font-size: 30px;
 }
 
 .about-body p {
-    font-size: 40px;
+    margin: 0px 0px 0px 0px;
 }
 
 .hobby-list {
     list-style-type: none;
-    font-size: 35px;
 }
 
 .hobby-list >  li {
-    margin: 15px;
+    margin: 0px 15px  15px 15px;
 }
 
 .hobby-list > li:before {
@@ -24,7 +24,6 @@
 }
 
 .coffee {
-    /* margin-left: 40px; */
     font-style: italic;
 }
 
@@ -33,11 +32,6 @@
     font-size: 40px;
 }
 
-/* .me:hover {
-    color: mediumspringgreen;
-    font-size: 50px;
-    
-} */
 
 .about-body:hover > p > .me {
     color: white;
