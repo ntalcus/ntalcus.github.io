@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    border-color: white white grey white;
+    border-style: solid;
+    width: 100%;
+}
+
+.header a {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    padding: 60px 60px 60px 30px;
+    margin-left: 3px;
+}
