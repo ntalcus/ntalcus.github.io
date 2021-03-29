@@ -12,3 +12,17 @@
     padding: 60px 60px 60px 30px;
     margin-left: 3px;
 }
+
+.about-page {
+    background-color: grey;
+    display: flex; 
+}
+
+.about-column {
+    flex: 50%;
+    text-align: center;
+}
+
+.picture-column {
+    flex: 25%;
+}
